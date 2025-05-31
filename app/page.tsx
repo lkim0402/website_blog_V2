@@ -6,7 +6,7 @@ import FadeInPage from "../components/FadeInPage";
 export default function Home() {
   return (
     <FadeInPage>
-      <div className=" ">
+      <div className="text-lg ">
         {/* section 1 - cover */}
 
         <section className="flex gap-6">
@@ -26,8 +26,18 @@ export default function Home() {
                 AI
               </p>
               <div className="flex gap-2 underline hover:">
-                <Link href="https://github.com/lkim0402">github</Link>
-                <Link href="https://www.linkedin.com/in/leejunkim/">
+                <Link
+                  href="https://github.com/lkim0402"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/leejunkim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   linkedln
                 </Link>
               </div>
@@ -35,33 +45,41 @@ export default function Home() {
           </div>
         </section>
 
-        {/* section 2 - Welcome section*/}
+        {/* Welcome section*/}
         <section>
-          <div className="text-lg">
-            <p className="text-2xl  mb-3 mt-3 ">
-              👋 Welcome to my portfolio/blog!
-            </p>
-            <p>
-              I&apos;m an undergraduate senior @ UW Seattle majoring in CS.
-              I&apos;m interested in a lot of things, ranging from VR/AR,
-              gamedev, computer graphics, AI/ML, etc.
-            </p>
-            <section className="mt-2">
-              <div>Feel free to reach out anytime, happy to chat! ₍ᐢ. .ᐢ₎</div>
-            </section>
+          <div className="">
+            <p className=" font-bold mb-3 mt-3  text-indigo-400 ">Hi there!</p>
+            <div className="flex-col space-y-5">
+              <p>
+                Welcome to my website! I'm an undergraduate student at the
+                University of Washington studying CS. I’m more of a generalist,
+                having interest in lots of different areas at the same time.
+              </p>
+              <p>
+                Currently, I’m doing research in Modulabs in AI + Web3, learning
+                Java SpringBoot, and aiming for AWS Certified Solutions
+                Architect.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* section 3 - About this website*/}
+        {/* About this website*/}
         <section>
           <section className="mt-15 text-left">
-            <p className="text-2xl   mb-3 mt-3 ">📝 About this website</p>
+            <p className=" font-bold text-[1.2rem] mb-3 mt-3 ">
+              About this website
+            </p>
           </section>
-          <div className="flex flex-col space-y-4">
-            <p>
-              🌱 I&apos;ve always wanted to start a website/blog on my own.
-              It&apos;s only in March 2025 that I&apos;ve finally started to
-              build & work on it - I&apos;m primarily inspired by{" "}
+          <ul className="flex flex-col list-disc pl-6">
+            <li>
+              I've always wanted to start a website/blog on my own, because I
+              think it’s one of the best ways to show/express yourself in this
+              wide world. It's only in March 2025 that I've finally started to
+              build & work on it 🌱.
+            </li>
+            <li>
+              I&apos;m primarily inspired by{" "}
               <a
                 href="https://austinkleon.com/show-your-work/"
                 className="underline text-blue-900 hover:text-blue-700 dark:text-blue-100 dark:hover:text-sky-300"
@@ -83,11 +101,11 @@ export default function Home() {
                 post series
               </a>
               .
-            </p>
-            <p className="text-gray-500 dark:text-gray-200">
+            </li>
+            <li>
               🛠️ Tech stack: React, Tailwind CSS, Next.js, MongoDB driver/Atlas,
               Vercel/Render
-            </p>
+            </li>
             {/* <p>
               Each category represents different aspects:
               <ul>
@@ -102,7 +120,7 @@ export default function Home() {
               The difference between this website and my digital garden (the
               Mind section) is that{" "}
             </p> */}
-          </div>
+          </ul>
         </section>
 
         {/* Recent posts */}
