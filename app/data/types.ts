@@ -5,4 +5,5 @@ export interface sectionDetails {
   subtitle: string[];
   skills?: string[][];
   description?: string[][];
+  icon?: string;
 }

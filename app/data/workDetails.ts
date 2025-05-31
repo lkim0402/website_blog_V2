@@ -2,6 +2,15 @@ import { sectionDetails } from "./types";
 
 export const WorkDetails: sectionDetails[] = [
   {
+    title: "Modulabs",
+    titleLink: "",
+    date: "June 2025 - Aug 2025",
+    subtitle: ["AI researcher"],
+    skills: [["Python, JavaScript"]],
+    description: [["Exploring MCP, A2A, Web3"]],
+    icon: "/resumeIcons/modulabs_logo.jpg",
+  },
+  {
     title: "Makeability Lab @ UW",
     titleLink: "https://makeabilitylab.cs.washington.edu/",
     date: "Sept 2024 - Present",
@@ -9,17 +18,16 @@ export const WorkDetails: sectionDetails[] = [
     skills: [["Unity, C#, GPT, Prompt Engineering, HoloLens"]],
     description: [
       [
-        "Developing an AR HoloLens system that visualizes sounds through shape-based representations for DHH users, using real-time audio processing in Unity and the GPT API for real-time script generation and compilation",
-        "Creating a pipeline that consists of multiple AI agents for different tasks",
-        "Collaborating with research team on accessibility features and user experience design",
+        "Developing an AR HoloLens system (Unity/C#) that visualizes real-time audio for DHH users, with a multi-AI agent pipeline and GPT API, while researching on accessibility and UX design",
       ],
     ],
+    icon: "/resumeIcons/makeabilitylab.png",
   },
   {
     title: "ArtygenSpace",
     titleLink: "https://www.artygenspace.com/artygenspace-eng-version",
     date: "Aug 2024 - Dec 2024",
-    subtitle: ["Machine Learning Intern", "XR Developer Intern"],
+    subtitle: ["MLE Intern", "XR Developer Intern"],
     skills: [
       [
         "Python",
@@ -27,22 +35,19 @@ export const WorkDetails: sectionDetails[] = [
         "HuggingFace",
         "Fine-tuning",
         "Prompt Engineering",
-        "Docker",
+        "Flask",
       ],
       ["Unity", "C#", "HTML/CSS/JS", "LiDAR sensor", "XR/VR", "Vuforia Engine"],
     ],
     description: [
       [
-        "Designed and implemented a RAG pipeline for the ARpedia project w/ LangChain and GPT-4 to enable real-time, context-aware sound effect retrieval from a comprehensive CSV dataset containing over 1,000 pre-indexed audio samples",
-        "Integrated advanced pre-trained embeddings from HuggingFace to dynamically match and retrieve the most relevant sound effects based on user input",
+        "Designed a RAG pipeline using Python, LangChain, GPT-4, and HuggingFace embeddings to enable real-time, context-aware sound effect retrieval from 1,000+ indexed audio samples, with fine-tuning, prompt engineering, and endpoint testing with Flask",
       ],
       [
-        "Development of three experimental AR/XR multiplayer prototypes, each showcased at high-profile public exhibitions",
-        "Cosmic Flip - Engineered a real-time multiplayer card game by integrating real-time LiDAR sensor data with Unity, enabling precise spatial interactions and dynamic gameplay mechanics",
-        "BalanceX - Designed and developed an Apple Vision Pro-powered Jenga game, leveraging spatial computing and advanced XR interaction",
-        "Wyft - Built an AR scavenger hunt application utilizing QR codes and shared spatial anchors",
+        "Developed AR/XR multiplayer prototypes using Unity, C#, HTML/CSS/JS, LiDAR, and Vuforia, featuring real-time spatial interactions, Vision Pro-powered XR gameplay, and AR experiences with QR codes and shared anchors—showcased at public exhibitions",
       ],
     ],
+    icon: "/resumeIcons/artygenspace.jpg",
   },
   {
     title: "Haemil School",
@@ -51,31 +56,29 @@ export const WorkDetails: sectionDetails[] = [
     skills: [["Google Workspace Tools", "Google Cloud", "EdTech"]],
     description: [
       [
-        "Upgraded the school’s database system (30TB of grades, schedules, and documents) to a Google Workspace based platform",
-        "Taught one-week teaching curriculum on Edtech for 15+ faculty members",
+        "Upgraded a 30TB school database to Google Workspace and delivered a one-week EdTech training to 15+ faculty members",
       ],
     ],
+    icon: "/resumeIcons/haemil.jpg",
   },
-  {
-    title: "Together Village",
-    date: "Jun 2023 - Sep 2023",
-    subtitle: ["Bootcamp Host & Co-head Teacher"],
-    skills: [
-      [
-        "Teaching",
-        "Curriculum Design",
-        "Classroom Management",
-        "Google Classroom",
-      ],
-    ],
-    description: [
-      [
-        "Organized an English bootcamp for students of grades 5-10, both in-person and online",
-        "Managed an online education-technology system built on google classroom for 20+ students",
-        "Effectively concluded the bootcamp with every student holding a 5 minute English presentation",
-      ],
-    ],
-  },
+  // {
+  //   title: "Together Village",
+  //   date: "Jun 2023 - Sep 2023",
+  //   subtitle: ["Bootcamp Host & Co-head Teacher"],
+  //   skills: [
+  //     [
+  //       "Teaching",
+  //       "Curriculum Design",
+  //       "Classroom Management",
+  //       "Google Classroom",
+  //     ],
+  //   ],
+  //   description: [
+  //     [
+  //       "Organized and managed a hybrid English bootcamp for grades 5–10, using Google Classroom for 20+ students, culminating in 5-minute presentations by all participants.",
+  //     ],
+  //   ],
+  // },
   {
     title: "Student Technology Assistance Team @ Pierce College",
     titleLink: "https://www.pierce.ctc.edu/computer-labs-stat",
@@ -88,9 +91,9 @@ export const WorkDetails: sectionDetails[] = [
     ],
     description: [
       [
-        "Resolved diverse technical issues related to both software and hardware components",
-        "Assisted on average 60+ students per week",
+        "Resolved diverse technical issues related to both software and hardware components, assisted on average 60+ students per week",
       ],
     ],
+    icon: "/resumeIcons/pierce.png",
   },
 ];

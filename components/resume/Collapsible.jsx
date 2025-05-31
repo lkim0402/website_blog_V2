@@ -7,15 +7,15 @@ export default function Collapsible({ title, children, defaultOpen = false }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="mb-2">
-      <div className="border-b-2 border-gray-300 my-5">
+    <div className="mb-3">
+      <div className="">
         <button
           className="transition-all disabled:pointer-events-none cursor-pointer w-full flex items-center justify-between"
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           title={`${isOpen ? "Click to close" : "Click to expand"}`}
         >
-          <div className="flex-grow text-left ">
+          <div className="flex-grow text-left text-indigo-400 mb-8">
             <Section title={title} />
           </div>
 
@@ -44,7 +44,7 @@ export default function Collapsible({ title, children, defaultOpen = false }) {
         </button>
       </div>
       <div
-        className={`space-y-5 overflow-hidden transition-all duration-300 ease-in-out ${
+        className={` overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "h-auto opacity-100" : "h-0 opacity-0"
         }`}
       >

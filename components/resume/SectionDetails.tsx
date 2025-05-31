@@ -1,5 +1,5 @@
 import { sectionDetails } from "@/data/types";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function SectionDetails({
   title,
@@ -8,66 +8,72 @@ export default function SectionDetails({
   subtitle,
   skills = [],
   description = [],
+  icon,
 }: sectionDetails) {
-  // skills, description is optional
+  // Normalize subtitle to an array if it's a string
+  const subtitleArray = Array.isArray(subtitle) ? subtitle : [subtitle];
 
   return (
-    <div className="">
-      <div>
-        {/* <p className="font-bold ">{title}</p> */}
-        <div
-          className={`font-bold text-lg ${titleLink ? "cursor-pointer" : ""}`}
-        >
-          {titleLink ? (
-            <Link
-              href={titleLink}
-              className="hover:text-zinc-400"
-              title={titleLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="transition-all duration-300 transform origin-left hover:scale-101">
-                {title}
-              </p>
-            </Link>
-          ) : (
-            title
-          )}
+    <div className="flex items-start gap-4 mb-2">
+      {/* Icon */}
+      {icon && (
+        <div className="min-w-[48px] h-[48px] mt-1">
+          <Image
+            src={icon}
+            alt="logo"
+            width={68}
+            height={68}
+            className="rounded-md"
+          />
         </div>
+      )}
 
-        <div className=" border-l-3 border-gray-200 pl-7 mt-2.5">
-          <div>
-            {skills.length > 0 && description.length > 0 && (
-              <div className=" space-y-32">
-                {skills.map((skillSet, index) => (
-                  <div key={index} className="mb-4">
-                    {/* title (ex. Research Assistant) + date */}
-                    <div
-                      className={`flex flex-col md:flex-row justify-between ${
-                        index > 0 ? "mt-9" : ""
-                      }`}
+      {/* Right content */}
+      <div className="flex-1 ml-6">
+        {/* Render each role (subtitle) */}
+        {subtitleArray.map((role, index) => (
+          <div key={index} className="mb-6">
+            <div className="mb-4">
+              {/* Role title */}
+              <p className="font-medium text-[1.35rem]">{role}</p>
+
+              {/* Company and Date (only show on first role) */}
+              {index === 0 && (
+                <div className="text-gray-500 text-[1rem]  mb-1">
+                  {titleLink ? (
+                    <a
+                      href={titleLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
                     >
-                      <p className={`mb-1 font-bold `}>{subtitle[index]}</p>
-                      <p>{date}</p>
-                    </div>
+                      {title}
+                    </a>
+                  ) : (
+                    title
+                  )}{" "}
+                  | {date}
+                </div>
+              )}
 
-                    {/* Displaying the skills */}
-                    <ul className="list-none dark:text-blue-100  text-zinc-400 italic mb-3">
-                      <li>{skillSet.join(", ")}</li>{" "}
-                    </ul>
+              {/* Skills */}
+              {skills[index] && skills[index].length > 0 && (
+                <p className="text-[0.9rem] italic text-gray-400 ">
+                  {skills[index].join(", ")}
+                </p>
+              )}
+            </div>
 
-                    {/* displaying each skill */}
-                    {description[index]?.map((desc, descIndex) => (
-                      <ul key={descIndex} className="list-none mb-2">
-                        <li>{desc}</li>
-                      </ul>
-                    ))}
-                  </div>
+            {/* Description */}
+            {description[index] && description[index].length > 0 && (
+              <ul className="list-none  text-[1rem] text-gray-700 space-y-1">
+                {description[index].map((desc, descIdx) => (
+                  <li key={descIdx}>{desc}</li>
                 ))}
-              </div>
+              </ul>
             )}
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

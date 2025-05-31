@@ -4,6 +4,11 @@ import "./globals.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 // import "highlight.js/styles/github.css";
 
@@ -21,8 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <html lang="en" className={inter.className}>
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <Head>
         <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -37,9 +41,11 @@ export default function RootLayout({
       />
       <GoogleAnalytics gaId="G-VEJVKJLKK7" />
 
-      <body className="lg:max-w-7xl text-lg lg:mx-auto">
+      <body className="mt-25">
         <Header />
-        <div className=" px-6 md:px-16 ">{children}</div>
+        <div className="px-6  md:pl-70 lg:pl-82 xl:pl-90 lg:w-10/12">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

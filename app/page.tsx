@@ -1,27 +1,37 @@
 // "use client";
-
+import Link from "next/link";
+import Image from "next/image";
 import FadeInPage from "../components/FadeInPage";
-import { Cormorant } from "next/font/google";
-const cormorant = Cormorant({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  display: "swap",
-});
 
 export default function Home() {
   return (
     <FadeInPage>
-      <div className="space-y-5 ">
+      <div className=" ">
         {/* section 1 - cover */}
 
-        <section className="">
-          <div className="my-15 text-left">
-            <p className="text-6xl">Hi, I&apos;m Leejun Kim.</p>
-            <p
-              className={`text-4xl ${cormorant.className} mt-3 dark:text-blue-100`}
-            >
-              Full stack developer. Researcher. Artist.
-            </p>
+        <section className="flex gap-6">
+          <div className="w-30 h-40 relative">
+            <Image
+              src="/test.png"
+              alt="test"
+              fill
+              className="object-cover rounded-md"
+            />
+          </div>
+          <div className="mt-4 text-left">
+            <p className="font-bold text-[2rem]">Leejun Kim</p>
+            <div className="text-gray-600">
+              <p>
+                CS major @ UW, focus on backend engineering + cloud, interest in
+                AI
+              </p>
+              <div className="flex gap-2 underline hover:">
+                <Link href="https://github.com/lkim0402">github</Link>
+                <Link href="https://www.linkedin.com/in/leejunkim/">
+                  linkedln
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
