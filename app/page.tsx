@@ -51,7 +51,7 @@ export default function Home() {
             <p className=" font-bold mb-3 mt-3  text-indigo-400 ">Hi there!</p>
             <div className="flex-col space-y-5">
               <p>
-                Welcome to my website! I'm an undergraduate student at the
+                Welcome to my website! I’m an undergraduate student at the
                 University of Washington studying CS. I’m more of a generalist,
                 having interest in lots of different areas at the same time.
               </p>
@@ -73,9 +73,9 @@ export default function Home() {
           </section>
           <ul className="flex flex-col list-disc pl-6">
             <li>
-              I've always wanted to start a website/blog on my own, because I
+              I’ve always wanted to start a website/blog on my own, because I
               think it’s one of the best ways to show/express yourself in this
-              wide world. It's only in March 2025 that I've finally started to
+              wide world. It’s only in March 2025 that I’ve finally started to
               build & work on it 🌱.
             </li>
             <li>
