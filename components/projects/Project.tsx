@@ -28,7 +28,7 @@ export default function Project({
     
     align-center 
 
-    w-full max-w-lg
+    w-full 
     "
     >
       <div className="relative">
@@ -56,38 +56,36 @@ export default function Project({
 
       {/* Project details below the carousel */}
       <div className="space-y-2 px-2 mt-3">
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <div className="flex flex-wrap gap-2 ">
-          <span className="text-gray-600 dark:text-white dark:opacity-70">
-            {date}
-          </span>
-          <span className="text-gray-600">|</span>
-          <span className="text-gray-600 dark:text-white dark:opacity-70">
-            {type}
-          </span>
-          <span className="text-gray-600">|</span>
+        <h2 className="text-2xl font-bold text-indigo-400 dark:text-indigo-200">
+          {title}
+        </h2>
+        <div className="flex flex-wrap gap-2 text-gray-800 dark:text-gray-300">
+          <span className=" dark:text-white dark:opacity-70">{date}</span>
+          <span className="">|</span>
+          <span className=" dark:text-white dark:opacity-70">{type}</span>
+          <span className="">|</span>
           {links &&
             links.map((el, index) => {
               return (
                 <Link
                   key={index}
                   href={el.url}
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-800 dark:hover:text-blue-200 hover:scale-105"
+                  className="text-gray-800 dark:text-gray-300 hover:text-indigo-400 dark:hover:text-indigo-200 hover:scale-105"
                 >
                   [{el.name}]
                 </Link>
               );
             })}
         </div>
-        <span className=" text-gray-500 italic dark:text-blue-200">
+        <span className="  italic text-gray-400 dark:text-gray-300">
           {skills}
         </span>
         <div className="py-2">
-          <ul className="list-disc ml-4">
+          <div className="">
             {explanation.map((el, index) => {
-              return <li key={index}>{el}</li>;
+              return <p key={index}>{el}</p>;
             })}
-          </ul>
+          </div>
         </div>
       </div>
     </div>

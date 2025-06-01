@@ -45,17 +45,13 @@ export const projectData: ProjectType[] = [
     date: "Mar 2025",
     type: ["Fullstack"],
     imgList: [
+      "/project/blog/2.png",
+      "/project/blog/5.png",
+      "/project/blog/3.png",
       "/project/blog/4.png",
       "/project/blog/1.png",
-      "/project/blog/2.png",
-      "/project/blog/3.png",
-      "/project/blog/5.png",
     ],
     links: [
-      {
-        name: "current site :D",
-        url: "https://www.leejunkim.com/",
-      },
       {
         name: "post series",
         url: "https://www.leejunkim.com/post/67f4bb15c0b36b328779f8d4",
@@ -64,9 +60,7 @@ export const projectData: ProjectType[] = [
     skills:
       "React, Next.js, Tailwind CSS, MongoDB driver/Atlas, Vercel/Render, Tiptap",
     explanation: [
-      "Custom Blog & CMS for technical documentation, essays, and portfolio",
-      "CMS - Utilized TipTap editor, implementing CRUD features for blog post management and image storage features, and Firebase Auth for use authentication",
-      "Achieved Lighthouse score of 95+ for high-performance site optimization",
+      "A custom blog and CMS for technical documentation, essays, and portfolio use, featuring a TipTap editor with full CRUD functionality, image storage, and Firebase Authentication",
     ],
   },
 
@@ -90,9 +84,7 @@ export const projectData: ProjectType[] = [
     ],
     skills: "Unity, C#, Procreate",
     explanation: [
-      "Dialogue-driven visual novel where you play as a sentient Crown choosing a kingdom’s ruler based on persuasive arguments",
-      "Multiple routes/endings determined by your decisions",
-      "Developed in Unity (C#) with hand-drawn character art in Procreate for the Pirate Game Jam 2025",
+      "Dialogue-driven visual novel where you play as a sentient crown choosing a kingdom’s ruler based on persuasive arguments; leads to 3 different endings & routes. Made in 2 weeks for the Pirate Game Jam 2025",
     ],
   },
 
@@ -116,9 +108,7 @@ export const projectData: ProjectType[] = [
     ],
     skills: "TensorFlow, Python, HuggingFace, React, CSS/HTML/JS, Vercel",
     explanation: [
-      "A CNN model BinGenius that performs trash classification",
-      "Utilized TensorFlow and Python, used ~5000 images from HuggingFace for fine-tuning on VGG16, and deployed via a Flask web interface with HTML/CSS",
-      "Achieved 75% accuracy, won 3rd place in the EduHacks hackathon 2025",
+      "Developed a CNN model for trash classification, fine-tuned on ~5000 images from HuggingFace with VGG16, deployed via a Flask web interface with HTML/CSS, achieving 75% accuracy and winning 3rd place in the EduHacks hackathon 2025",
     ],
   },
 ];

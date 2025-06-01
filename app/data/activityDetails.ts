@@ -15,9 +15,9 @@ export const activityDetails: sectionDetails[] = [
     ],
     description: [
       [
-        "Directed 25+ various food banks, educational, medical missions in 5+ developing countries",
-        "Hosted 10+ medical events by inviting local and remote doctors for free treatment to 200+ local patients online and offline",
+        "Directed 25+ various food banks, educational, medical missions in 5+ developing countries; Hosted 10+ medical events by inviting local and remote doctors for free treatment to 200+ local patients online and offline",
       ],
     ],
+    icon: "/resumeIcons/projectgiven.jpg",
   },
 ];

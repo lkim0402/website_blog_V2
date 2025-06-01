@@ -35,11 +35,13 @@ export default function SectionDetails({
           <div key={index} className="mb-6">
             <div className="mb-4">
               {/* Role title */}
-              <p className="font-medium text-[1.4rem]">{role}</p>
+              <p className="font-medium text-[1.45rem] dark:text-indigo-200">
+                {role}
+              </p>
 
               {/* Company and Date (only show on first role) */}
               {index === 0 && (
-                <div className="text-gray-500 mb-1">
+                <div className="text-gray-600 dark:text-gray-300 mb-1">
                   {titleLink ? (
                     <a
                       href={titleLink}
@@ -58,7 +60,7 @@ export default function SectionDetails({
 
               {/* Skills */}
               {skills[index] && skills[index].length > 0 && (
-                <p className="text-[1rem] italic text-gray-400 ">
+                <p className="italic text-gray-400 dark:text-gray-300">
                   {skills[index].join(", ")}
                 </p>
               )}
@@ -66,7 +68,7 @@ export default function SectionDetails({
 
             {/* Description */}
             {description[index] && description[index].length > 0 && (
-              <ul className="list-none text-gray-700 space-y-1">
+              <ul className="list-none  space-y-1">
                 {description[index].map((desc, descIdx) => (
                   <li key={descIdx}>{desc}</li>
                 ))}

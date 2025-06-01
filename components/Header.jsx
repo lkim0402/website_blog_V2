@@ -249,7 +249,7 @@ export function Header() {
           </button>
         </div>
       </nav> */}
-      <nav className="hidden md:block fixed w-64 lg:w-72 xl:w-80  dark:bg-gray-900 ">
+      <nav className="hidden md:block fixed w-64 lg:w-72 xl:w-80   ">
         <div className="flex flex-col gap-2 items-end pr-10">
           {headerElem.map((el) => (
             <Link
@@ -262,10 +262,10 @@ export function Header() {
                   : `/${el.toLowerCase()}`
               }
               className={clsx(
-                "hover:text-blue-600 dark:hover:text-blue-200 text-[1.3rem] transition-all duration-300 transform hover:scale-105",
+                "hover:text-indigo-600 dark:hover:text-indigo-200 text-[1.3rem] transition-all duration-300 transform hover:scale-105",
                 {
                   "hover:underline": el === "mind",
-                  "dark:text-blue-200 text-blue-600":
+                  "dark:text-indigo-300 text-indigo-600":
                     pathname ===
                     (el === "ABOUT" ? "/" : `/${el.toLowerCase()}`),
                 }

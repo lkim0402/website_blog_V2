@@ -6,8 +6,14 @@ interface pageTitleFormat {
 export default function PageTitle({ title, description }: pageTitleFormat) {
   return (
     <div className="mb-15 text-center sm:text-justify">
-      <div className="text-2xl pb-2">{title}</div>
-      <p className="text-zinc-500 dark:text-blue-100">{description}</p>
+      <div
+        className="text-3xl pb-2 font-bold 
+      text-indigo-400
+      dark:text-indigo-200"
+      >
+        {title}
+      </div>
+      <p className=" dark:text-indigo-100">{description}</p>
     </div>
   );
 }

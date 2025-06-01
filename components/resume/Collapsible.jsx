@@ -15,7 +15,7 @@ export default function Collapsible({ title, children, defaultOpen = false }) {
           type="button"
           title={`${isOpen ? "Click to close" : "Click to expand"}`}
         >
-          <div className="flex-grow text-left text-indigo-400 mb-8">
+          <div className="flex-grow text-left  text-indigo-400 dark:text-indigo-300 mb-8">
             <Section title={title} />
           </div>
 

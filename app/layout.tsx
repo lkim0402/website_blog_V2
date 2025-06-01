@@ -43,7 +43,7 @@ export default function RootLayout({
 
       <body className="mt-25">
         <Header />
-        <div className="px-6 text-lg  md:pl-70 lg:pl-82 xl:pl-90 lg:w-10/12">
+        <div className="px-6 text-lg md:pl-70 lg:pl-82 xl:pl-90 w-11/12">
           {children}
         </div>
         <Footer />

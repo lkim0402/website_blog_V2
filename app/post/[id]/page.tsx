@@ -178,9 +178,9 @@ export default function PostDetail() {
                 </div>
               </div>
             </div>
-            <hr className="h-px mt-3 mb-10 bg-gray-200 border-0" />
+            <hr className="h-px mt-3 mb-10  bg-gray-200 border-0" />
             <div
-              className="postContent"
+              className="postContent text-lg"
               dangerouslySetInnerHTML={{ __html: post.body }}
             />
             {error && <div className="text-red-500">{error}</div>}

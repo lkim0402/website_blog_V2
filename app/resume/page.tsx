@@ -5,14 +5,14 @@
 // import Link from "next/link";
 import SectionDetails from "../../components/resume/SectionDetails";
 import Collapsible from "../../components/resume/Collapsible";
-import Certification from "../../components/resume/Certification";
+// import Certification from "../../components/resume/Certification";
 import FadeInPage from "../../components/FadeInPage";
 
 // importing data
 import { WorkDetails } from "@/data/workDetails";
 import { educationDetails } from "@/data/educationDetails";
 import { activityDetails } from "@/data/activityDetails";
-import { certDetails } from "@/data/certDetails";
+// import { certDetails } from "@/data/certDetails";
 
 export default function Resume() {
   return (
@@ -39,11 +39,39 @@ export default function Resume() {
 
         {/* Certs - using Collapsible */}
         <Collapsible title="Certifications" defaultOpen>
-          <div className="font-bold text-lg">Professional Certifications</div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+          {/* <div className="font-bold text-lg">Professional Certifications</div> */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {certDetails.map((el) => {
               return <Certification key={el.title} {...el} />;
             })}
+          </div> */}
+
+          <div className="mb-6">
+            <div className="mb-4">
+              {/* Role title */}
+              <p className="font-medium text-[1.45rem] dark:text-indigo-200">
+                AWS Certified Cloud Practitioner
+              </p>
+
+              {/* Company and Date (only show on first role) */}
+              <div className="text-gray-600 dark:text-gray-300 mb-1">
+                April 2025
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <div className="mb-4">
+              {/* Role title */}
+              <p className="font-medium text-[1.45rem] dark:text-indigo-200">
+                TensorFlow Developer Certificate{" "}
+              </p>
+
+              {/* Company and Date (only show on first role) */}
+              <div className="text-gray-600 dark:text-gray-300 mb-1">
+                Sept 2023
+              </div>
+            </div>
           </div>
         </Collapsible>
 

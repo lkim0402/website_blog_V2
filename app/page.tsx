@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import FadeInPage from "../components/FadeInPage";
@@ -8,7 +8,6 @@ export default function Home() {
     <FadeInPage>
       <div className="text-lg ">
         {/* section 1 - cover */}
-
         <section className="flex gap-6">
           <div className="w-30 h-40 relative">
             <Image
@@ -20,12 +19,12 @@ export default function Home() {
           </div>
           <div className="mt-4 text-left">
             <p className="font-bold text-[2rem]">Leejun Kim</p>
-            <div className="text-gray-600">
+            <div className="text-gray-600 dark:text-indigo-200">
               <p>
-                CS major @ UW, focus on backend engineering + cloud, interest in
-                AI
+                🌀🐚 CS major @ UW Seattle, focus on backend engineering +
+                cloud, interest in AI
               </p>
-              <div className="flex gap-2 underline hover:">
+              <div className="flex gap-2 underline dark:text-indigo-300">
                 <Link
                   href="https://github.com/lkim0402"
                   target="_blank"
@@ -46,28 +45,92 @@ export default function Home() {
         </section>
 
         {/* Welcome section*/}
-        <section>
-          <div className="">
-            <p className=" font-bold mb-3 mt-3  text-indigo-400 ">Hi there!</p>
-            <div className="flex-col space-y-5">
-              <p>
-                Welcome to my website! I’m an undergraduate student at the
-                University of Washington studying CS. I’m more of a generalist,
-                having interest in lots of different areas at the same time.
-              </p>
-              <p>
-                Currently, I’m doing research in Modulabs in AI + Web3, learning
-                Java SpringBoot, and aiming for AWS Certified Solutions
-                Architect.
-              </p>
-            </div>
-          </div>
-        </section>
+        <div className="flex flex-wrap 3xl:flex-nowrap ">
+          <section>
+            <section className="flex-auto min-w-[18rem] w-full 2xl:w-4xl">
+              <div className="">
+                <p className=" font-bold mb-3 mt-3 text-[1.8rem] text-indigo-400 dark:text-indigo-200 ">
+                  Hi there!
+                </p>
+                <div className="flex-col space-y-5">
+                  <div>
+                    <p>Welcome to my website! </p>
+                    <p>
+                      I’m an undergraduate student at the University of
+                      Washington studying CS. I’m more of a generalist, having
+                      interest in lots of different areas at the same time.
+                    </p>
+                  </div>
+                  <p>
+                    Currently, I’m doing research in Modulabs in AI + Web3,
+                    learning Java SpringBoot, and aiming for AWS Certified
+                    Solutions Architect.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-        {/* About this website*/}
-        <section>
-          <section className="mt-15 text-left">
-            <p className=" font-bold text-[1.2rem] mb-3 mt-3 ">
+            {/* Things I've tried/am interested in:*/}
+            <section>
+              <div className="mt-6 mb-5">
+                <p className=" font-bold mb-1 text-[1.25rem]  ">
+                  Things I’ve tried/am interested in:
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>Cloud - AWS CCP</li>
+                  <li>AI/ML - hackathon project, internship </li>
+                  <li>
+                    full stack - various ongoing/finished personal projects (+
+                    this website xD)
+                  </li>
+                  <li>VR/AR/XR - had an internship and a research via Unity</li>
+                  <li>game dev - related, and also tried a game jam :)</li>
+                </ul>
+              </div>
+            </section>
+          </section>
+
+          {/* the part i want to fix */}
+          <section className="flex flex-wrap gap-5 mb-5 flex-1 ">
+            {/* Some Facts */}
+            <section className="flex-1 min-w-[20rem]">
+              <div className="font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black">
+                RANDOM FACTS
+              </div>
+              <ul className="list-disc pl-6">
+                <li>
+                  I’m from South Korea, but I grew up in the Philippines almost
+                  my whole life
+                </li>
+                <li>
+                  Used to play the piano for the local church for 5+ years
+                </li>
+              </ul>
+            </section>
+
+            {/* likes */}
+            <section className="flex-1 min-w-[20rem]">
+              <div className="font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black">
+                LIKES
+              </div>
+              <ul className="list-disc pl-6">
+                <li>
+                  Drawing (CSP/Procreate), music, writing, world building -
+                  basically creating :)
+                </li>
+                <li>
+                  Reading (programming, scifi, finance, essays, self-help)
+                </li>
+                <li>Organizing notes - usually obsidian, sometimes notion</li>
+              </ul>
+            </section>
+          </section>
+
+          {/* About this website*/}
+        </div>
+        <section className=" py-7 px-6 mt-4 text-black bg-[#E5E4FF] dark:bg-[#cbc9f9]">
+          <section className="text-left">
+            <p className=" font-bold text-[1.2rem] mb-1] ">
               About this website
             </p>
           </section>
@@ -82,21 +145,21 @@ export default function Home() {
               I&apos;m primarily inspired by{" "}
               <a
                 href="https://austinkleon.com/show-your-work/"
-                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-100 dark:hover:text-sky-300"
+                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-900 dark:hover:text-indigo-500 "
               >
                 Show Your Work
               </a>{" "}
               and{" "}
               <a
                 href="https://www.swyx.io/learn-in-public"
-                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-100 dark:hover:text-sky-300"
+                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-900 dark:hover:text-indigo-500"
               >
                 Learn in Public
               </a>
               . I documented how I built this website in this{" "}
               <a
                 href="https://www.leejunkim.com/post/67f4bb15c0b36b328779f8d4"
-                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-100 dark:hover:text-sky-300"
+                className="underline text-blue-900 hover:text-blue-700 dark:text-blue-900 dark:hover:text-indigo-500"
               >
                 post series
               </a>
