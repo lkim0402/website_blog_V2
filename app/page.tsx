@@ -17,6 +17,7 @@ export default function Home() {
               className="object-cover rounded-md"
             />
           </div>
+          {/* // the intro top part */}
           <div className="mt-4 text-left">
             <p className="font-bold text-[2rem]">Leejun Kim</p>
             <div className="text-gray-600 dark:text-indigo-200">
