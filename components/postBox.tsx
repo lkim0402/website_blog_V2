@@ -61,9 +61,9 @@ export default function PostBox({
             tags.map((el, index) => (
               <div
                 key={index}
-                className="px-2 py-1 rounded-md 
-                  bg-blue-50 text-blue-700 
-                  dark:bg-blue-950 dark:text-blue-300
+                className="px-2 py-1  
+                  bg-indigo-100 text-indigo-700 
+                  dark:bg-indigo-950 dark:text-indigo-300
                   text-xs 
                   font-medium"
               >

@@ -17,7 +17,7 @@ export default function SectionDetails({
     <div className="flex items-start gap-4 mb-2">
       {/* Icon */}
       {icon && (
-        <div className="min-w-[48px] h-[48px] mt-1">
+        <div className="min-w-[48px] h-[48px] mt-1 hidden md:block">
           <Image
             src={icon}
             alt="logo"
@@ -29,35 +29,50 @@ export default function SectionDetails({
       )}
 
       {/* Right content */}
-      <div className="flex-1 ml-6">
+      <div className="flex-1 md:ml-6">
         {/* Render each role (subtitle) */}
         {subtitleArray.map((role, index) => (
           <div key={index} className="mb-6">
             <div className="mb-4">
-              {/* Role title */}
-              <p className="font-medium text-[1.45rem] dark:text-indigo-200">
-                {role}
-              </p>
+              {/* title + desc */}
+              <div className="flex ">
+                {icon && (
+                  <div className="min-w-[48px] h-[48px] mt-1 md:hidden block mr-4">
+                    <Image
+                      src={icon}
+                      alt="logo"
+                      width={68}
+                      height={68}
+                      className="rounded-md"
+                    />
+                  </div>
+                )}
+                {/* Role title */}
+                <div>
+                  <p className="font-medium text-[1.45rem] dark:text-indigo-200">
+                    {role}
+                  </p>
 
-              {/* Company and Date (only show on first role) */}
-              {index === 0 && (
-                <div className="text-gray-600 dark:text-gray-300 mb-1">
-                  {titleLink ? (
-                    <a
-                      href={titleLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {title}
-                    </a>
-                  ) : (
-                    title
-                  )}{" "}
-                  | {date}
+                  {/* Company and Date (only show on first role) */}
+                  {index === 0 && (
+                    <div className="text-gray-600 dark:text-gray-300 mb-1">
+                      {titleLink ? (
+                        <a
+                          href={titleLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          {title}
+                        </a>
+                      ) : (
+                        title
+                      )}{" "}
+                      | {date}
+                    </div>
+                  )}
                 </div>
-              )}
-
+              </div>
               {/* Skills */}
               {skills[index] && skills[index].length > 0 && (
                 <p className="italic text-gray-400 dark:text-gray-300">

@@ -7,3 +7,8 @@ export interface sectionDetails {
   description?: string[][];
   icon?: string;
 }
+
+export interface Tag {
+  id: string;
+  tag: string;
+}

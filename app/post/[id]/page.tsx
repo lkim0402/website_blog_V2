@@ -93,7 +93,7 @@ export default function PostDetail() {
   }, [id]);
 
   return (
-    <div className="md:max-w-full mx-auto px-4 mt-10 text-[1rem]">
+    <div className="md:max-w-full mx-full px-4 mt-5 text-[1rem]">
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -101,11 +101,11 @@ export default function PostDetail() {
           {/* Content - takes remaining space */}
           <div className="flex-1 min-w-0">
             {/* Back button above title */}
-            <div className="mb-4 sticky top-10">
+            <div className="mb-4 sticky top-10 hidden md:block">
               <Link
                 href={`/workshop`}
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full 
-                bg-gray-100 hover:bg-gray-200 transition-colors 
+                className="inline-flex items-center justify-center w-10 h-10 rounded-md
+                bg-white  transition-colors 
                 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <ArrowLeftFromLine className="w-5 h-5" />

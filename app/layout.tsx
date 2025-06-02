@@ -41,9 +41,9 @@ export default function RootLayout({
       />
       <GoogleAnalytics gaId="G-VEJVKJLKK7" />
 
-      <body className="mt-25">
+      <body className="mt-7 md:mt-25">
         <Header />
-        <div className="px-6 text-lg md:pl-70 lg:pl-82 xl:pl-90 w-11/12">
+        <div className="px-6 text-lg md:pl-70 lg:pl-82 xl:pl-90 md:w-11/12">
           {children}
         </div>
         <Footer />

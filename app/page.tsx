@@ -8,8 +8,8 @@ export default function Home() {
     <FadeInPage>
       <div className="text-lg ">
         {/* section 1 - cover */}
-        <section className="flex gap-6">
-          <div className="w-30 h-40 relative">
+        <section className="flex flex-col sm:flex-row gap-6">
+          <div className="w-30 aspect-[3/4] relative">
             <Image
               src="/test.png"
               alt="test"
@@ -47,14 +47,13 @@ export default function Home() {
         {/* Welcome section*/}
         <div className="flex flex-wrap 3xl:flex-nowrap ">
           <section>
-            <section className="flex-auto min-w-[18rem] w-full 2xl:w-4xl">
+            <section className="flex-auto min-w-[18rem] w-fit xl:w-3xl">
               <div className="">
                 <p className=" font-bold mb-3 mt-3 text-[1.8rem] text-indigo-400 dark:text-indigo-200 ">
                   Hi there!
                 </p>
                 <div className="flex-col space-y-5">
                   <div>
-                    <p>Welcome to my website! </p>
                     <p>
                       I’m an undergraduate student at the University of
                       Washington studying CS. I’m more of a generalist, having
@@ -94,7 +93,12 @@ export default function Home() {
           <section className="flex flex-wrap gap-5 mb-5 flex-1 ">
             {/* Some Facts */}
             <section className="flex-1 min-w-[20rem]">
-              <div className="font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black">
+              <div
+                className="rounded-md  font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black"
+                style={{
+                  background: "linear-gradient(to right, #fcd3ec, #d4e6ff)",
+                }}
+              >
                 RANDOM FACTS
               </div>
               <ul className="list-disc pl-6">
@@ -110,7 +114,12 @@ export default function Home() {
 
             {/* likes */}
             <section className="flex-1 min-w-[20rem]">
-              <div className="font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black">
+              <div
+                className="rounded-md font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black0"
+                style={{
+                  background: "linear-gradient(to right, #fcd3ec, #d4e6ff)",
+                }}
+              >
                 LIKES
               </div>
               <ul className="list-disc pl-6">
@@ -128,11 +137,9 @@ export default function Home() {
 
           {/* About this website*/}
         </div>
-        <section className=" py-7 px-6 mt-4 text-black bg-[#E5E4FF] dark:bg-[#cbc9f9]">
+        <section className="rounded-md  py-7 px-6 mt-4 text-black bg-[#E5E4FF] dark:bg-[#cbc9f9]">
           <section className="text-left">
-            <p className=" font-bold text-[1.2rem] mb-1] ">
-              About this website
-            </p>
+            <p className=" font-bold text-[1.2rem] mb-1 ">About this website</p>
           </section>
           <ul className="flex flex-col list-disc pl-6">
             <li>
