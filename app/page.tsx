@@ -116,7 +116,7 @@ export default function Home() {
             {/* likes */}
             <section className="flex-1 min-w-[20rem]">
               <div
-                className="rounded-md font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black0"
+                className="rounded-md font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black"
                 style={{
                   background: "linear-gradient(to right, #fcd3ec, #d4e6ff)",
                 }}
