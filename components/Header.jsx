@@ -106,7 +106,7 @@ export function Header() {
                     el == "home"
                       ? "/"
                       : el == "mind💭"
-                      ? "https://lkim0402.github.io/obsidian-vault-main/"
+                      ? "https://leejun-obsidian-vault.vercel.app/"
                       : `/${el}`
                   }
                   className={`hover:text-blue-600 dark:hover:text-blue-200 transition-all duration-300 transform hover:scale-105 ${
@@ -182,7 +182,7 @@ export function Header() {
                 el === "home"
                   ? "/"
                   : el === "mind💭"
-                  ? "https://lkim0402.github.io/obsidian-vault-main/"
+                  ? "https://leejun-obsidian-vault.vercel.app/"
                   : `/${el.toLowerCase()}`
               }
               className={clsx(
