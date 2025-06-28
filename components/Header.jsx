@@ -35,7 +35,7 @@ export function Header() {
     }
     // If a theme is set in localStorage, use that
     else if (theme === "light") {
-      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
       setCurTheme("light");
     }
   }, []);
