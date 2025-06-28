@@ -48,7 +48,7 @@ export default function Home() {
         {/* Welcome section*/}
         <div className="flex flex-wrap 3xl:flex-nowrap ">
           <section>
-            <section className="flex-auto min-w-[18rem] w-fit xl:w-3xl">
+            <section className="flex-auto min-w-[18rem] w-fit xl:w-3xl pr-10">
               <div className="">
                 <p className=" font-bold mb-3 mt-3 text-[1.8rem] text-indigo-400 dark:text-indigo-200 ">
                   Hi there!
@@ -62,9 +62,8 @@ export default function Home() {
                     </p>
                   </div>
                   <p>
-                    Currently, I’m doing research in Modulabs in AI + Web3,
-                    learning Java SpringBoot, and aiming for AWS Certified
-                    Solutions Architect.
+                    Currently, I’m learning Java SpringBoot and aiming for AWS
+                    Certified Solutions Architect.
                   </p>
                 </div>
               </div>
@@ -80,11 +79,11 @@ export default function Home() {
                   <li>Cloud - AWS CCP</li>
                   <li>AI/ML - hackathon project, internship </li>
                   <li>
-                    full stack - various ongoing/finished personal projects (+
-                    this website xD)
+                    Full stack - various ongoing/finished personal projects (+
+                    this website)
                   </li>
                   <li>VR/AR/XR - had an internship and a research via Unity</li>
-                  <li>game dev - related, and also tried a game jam :)</li>
+                  <li>Game dev - related, and also a game jam</li>
                 </ul>
               </div>
             </section>
@@ -103,10 +102,7 @@ export default function Home() {
                 RANDOM FACTS
               </div>
               <ul className="list-disc pl-6">
-                <li>
-                  I’m from South Korea, but I grew up in the Philippines almost
-                  my whole life
-                </li>
+                <li>I’m from South Korea, but I grew up in the Philippines</li>
                 <li>
                   Used to play the piano for the local church for 5+ years
                 </li>
@@ -126,18 +122,21 @@ export default function Home() {
               <ul className="list-disc pl-6">
                 <li>
                   Drawing (CSP/Procreate), music, writing, world building -
-                  basically creating :)
+                  basically creating stuff
                 </li>
                 <li>
                   Reading (programming, scifi, finance, essays, self-help)
                 </li>
-                <li>Organizing notes - usually obsidian, sometimes notion</li>
+                <li>Organizing notes - obsidian (sometimes notion)</li>
+                <li>Playing indie games during free time</li>
               </ul>
             </section>
           </section>
 
           {/* About this website*/}
         </div>
+
+        {/* About section*/}
         <section className="rounded-md  py-7 px-6 mt-4 text-black bg-[#E5E4FF] dark:bg-[#cbc9f9]">
           <section className="text-left">
             <p className=" font-bold text-[1.2rem] mb-1 ">About this website</p>

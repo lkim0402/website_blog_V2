@@ -26,17 +26,17 @@ export function Header() {
 
     // if theme is null, then make the default to light
     if (theme === null) {
-      // document.documentElement.classList.add("dark");
-      // localStorage.setItem("theme", "dark");
-      // setCurTheme("dark");
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setCurTheme("light");
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setCurTheme("dark");
+      // document.documentElement.classList.remove("dark");
+      // localStorage.setItem("theme", "light");
+      // setCurTheme("light");
     }
     // If a theme is set in localStorage, use that
-    else if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      setCurTheme("dark");
+    else if (theme === "light") {
+      document.documentElement.classList.add("light");
+      setCurTheme("light");
     }
   }, []);
 

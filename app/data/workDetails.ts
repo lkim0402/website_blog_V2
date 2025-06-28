@@ -1,15 +1,15 @@
 import { sectionDetails } from "./types";
 
 export const WorkDetails: sectionDetails[] = [
-  {
-    title: "Modulabs",
-    titleLink: "",
-    date: "June 2025 - Aug 2025",
-    subtitle: ["AI researcher"],
-    skills: [["Python, JavaScript"]],
-    description: [["Exploring MCP, A2A, Web3"]],
-    icon: "/resumeIcons/modulabs_logo.jpg",
-  },
+  // {
+  //   title: "Modulabs",
+  //   titleLink: "",
+  //   date: "July 2025 - Aug 2025",
+  //   subtitle: ["Researcher / Developer"],
+  //   skills: [[""]],
+  //   description: [["Game AI"]],
+  //   icon: "/resumeIcons/modulabs_logo.jpg",
+  // },
   {
     title: "Makeability Lab @ UW",
     titleLink: "https://makeabilitylab.cs.washington.edu/",
