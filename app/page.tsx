@@ -56,14 +56,15 @@ export default function Home() {
                 <div className="flex-col space-y-5">
                   <div>
                     <p>
-                      I’m an undergraduate student at the University of
-                      Washington studying CS. I’m more of a generalist, having
-                      interest in lots of different areas at the same time.
+                      I’m an undergraduate student at UW Seattle studying CS.
+                      I’m more of a generalist, having interest in lots of
+                      different areas at the same time.
                     </p>
                   </div>
                   <p>
                     Currently, I’m learning Java SpringBoot and aiming for AWS
-                    Certified Solutions Architect.
+                    Certified Solutions Architect, and researching AR tech at
+                    Makeability Lab @ UW.
                   </p>
                 </div>
               </div>
@@ -127,8 +128,8 @@ export default function Home() {
                 <li>
                   Reading (programming, scifi, finance, essays, self-help)
                 </li>
-                <li>Organizing notes - obsidian (sometimes notion)</li>
-                <li>Playing indie games during free time</li>
+                <li>Organizing notes - obsidian</li>
+                <li>Indie games (My fav is Hollow Knight!)</li>
               </ul>
             </section>
           </section>
