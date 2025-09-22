@@ -72,10 +72,10 @@ export default async function Workshop() {
                   {posts
                     .filter(
                       (post: Post) =>
-                        post.category == "Workshop" ||
-                        post.category == "Journal"
-                      // post.category === "Workshop" &&
-                      // post.status === "Published"
+                        // post.category == "Workshop" ||
+                        // post.category == "Journal"
+                        post.category === "Workshop" &&
+                        post.status === "Published"
                     )
                     // .filter((post) =>
                     //   activeTags.length === 0

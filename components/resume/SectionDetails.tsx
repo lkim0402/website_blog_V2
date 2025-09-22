@@ -84,7 +84,7 @@ export default function SectionDetails({
 
             {/* Description */}
             {description[index] && description[index].length > 0 && (
-              <ul className="list-disc list-outside ml-5 space-y-1">
+              <ul className="list-none  space-y-1">
                 {description[index].map((desc, descIdx) => (
                   <li key={descIdx}>{desc}</li>
                 ))}
