@@ -9,11 +9,11 @@ const headerElem = [
   "home",
   "resume",
   "projects",
-  "workshop", //TODO
-  "journal", // Add once in i actually have posts here
-  // "BOOKS",
-  "mind💭",
+  "workshop",
+  "journal",
+  // "books",
   // "guestbook",
+  "mind💭",
 ];
 
 export function Header() {

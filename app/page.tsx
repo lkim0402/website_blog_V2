@@ -56,13 +56,13 @@ export default function Home() {
                 <div className="flex-col space-y-5">
                   <div>
                     <p>
-                      I’m an undergraduate student at UW Seattle studying CS.
-                      I’m more of a generalist, having interest in lots of
-                      different areas at the same time.
+                      I’m an undergrad @ UW Seattle majoring CS. I’m more of a
+                      generalist, having interest ranging from VR/AR to backend
+                      engineering. I also love art and creative media.
                     </p>
                   </div>
                   <p>
-                    Currently, I’m learning Java SpringBoot and aiming for AWS
+                    Currently, I’m learning Java SpringBoot, aiming for AWS
                     Certified Solutions Architect, and researching AR tech at
                     Makeability Lab @ UW.
                   </p>
@@ -77,14 +77,14 @@ export default function Home() {
                   Things I’ve tried/am interested in:
                 </p>
                 <ul className="list-disc pl-6">
-                  <li>Cloud - AWS CCP</li>
-                  <li>AI/ML - hackathon project, internship </li>
+                  <li>Cloud engineering - AWS CCP, SAA (TODO)</li>
                   <li>
-                    Full stack - various ongoing/finished personal projects (+
-                    this website)
+                    Full stack engineering - various ongoing/finished personal
+                    projects (+ this website)
                   </li>
-                  <li>VR/AR/XR - had an internship and a research via Unity</li>
-                  <li>Game dev - related, and also a game jam</li>
+                  <li>
+                    VR/Game dev - had an internship, research, game jam w/ Unity
+                  </li>
                 </ul>
               </div>
             </section>
@@ -103,7 +103,7 @@ export default function Home() {
                 RANDOM FACTS
               </div>
               <ul className="list-disc pl-6">
-                <li>I’m from South Korea, but I grew up in the Philippines</li>
+                <li>I’m from South Korea, but I grew up in the Philippines!</li>
                 <li>
                   Used to play the piano for the local church for 5+ years
                 </li>
@@ -123,13 +123,13 @@ export default function Home() {
               <ul className="list-disc pl-6">
                 <li>
                   Drawing (CSP/Procreate), music, writing, world building -
-                  basically creating stuff
+                  basically creating things
                 </li>
                 <li>
                   Reading (programming, scifi, finance, essays, self-help)
                 </li>
                 <li>Organizing notes - obsidian</li>
-                <li>Indie games (My fav is Hollow Knight!)</li>
+                <li>Gaming!</li>
               </ul>
             </section>
           </section>

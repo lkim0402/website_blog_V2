@@ -5,14 +5,12 @@
 // import Link from "next/link";
 import SectionDetails from "../../components/resume/SectionDetails";
 import Collapsible from "../../components/resume/Collapsible";
-// import Certification from "../../components/resume/Certification";
 import FadeInPage from "../../components/FadeInPage";
 
 // importing data
 import { WorkDetails } from "@/data/workDetails";
 import { educationDetails } from "@/data/educationDetails";
 import { activityDetails } from "@/data/activityDetails";
-// import { certDetails } from "@/data/certDetails";
 
 export default function Resume() {
   return (
@@ -24,7 +22,7 @@ export default function Resume() {
         <Collapsible title="Experience" defaultOpen>
           <div className="space-y-10">
             {WorkDetails.map((el) => {
-              return <SectionDetails key={el.title} {...el} />;
+              return <SectionDetails key={el.org} {...el} />;
             })}
           </div>
         </Collapsible>
@@ -32,7 +30,7 @@ export default function Resume() {
         <Collapsible title="Education" defaultOpen>
           <div>
             {educationDetails.map((el) => {
-              return <SectionDetails key={el.title} {...el} />;
+              return <SectionDetails key={el.org} {...el} />;
             })}
           </div>
         </Collapsible>
@@ -81,7 +79,7 @@ export default function Resume() {
 
           <div className="">
             {activityDetails.map((el) => {
-              return <SectionDetails key={el.title} {...el} />;
+              return <SectionDetails key={el.org} {...el} />;
             })}
           </div>
         </Collapsible>
@@ -93,27 +91,26 @@ export default function Resume() {
               <p className="text-lg font-semibold">Languages</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://skillicons.dev/icons?i=html,css,js,ts,python,cs,bash,latex"
+                src="https://skillicons.dev/icons?i=java,js,ts,python,cs,bash"
                 alt="Languages"
               />
             </div>
 
             <div>
-              <p className="text-lg font-semibold">
-                Frameworks / Libraries / Tools
-              </p>
+              <p className="text-lg font-semibold">Frameworks / Libraries</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,tailwind,unity,aws,tensorflow,pytorch,linux,git,github"
+                src="https://skillicons.dev/icons?i=spring,react,nextjs,nodejs,express,tailwind,unity,aws,tensorflow"
                 alt="Frameworks"
               />
             </div>
+
             <div>
-              <p className="text-lg font-semibold">Productivity</p>
+              <p className="text-lg font-semibold">Databases</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://skillicons.dev/icons?i=obsidian,notion"
-                alt="Tools"
+                src="https://skillicons.dev/icons?i=postgresql,mongodb"
+                alt="Frameworks"
               />
             </div>
           </div>

@@ -51,6 +51,12 @@ code {
   display: block !important;
 }
 
+/*Youtube videos centered*/
+div[data-youtube-video] {
+  display: flex;
+  justify-content: center;
+}
+
 .postContent {
   /* Link styling (unchanged) */
   a {

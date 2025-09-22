@@ -1,11 +1,12 @@
 export interface sectionDetails {
-  title: string;
-  titleLink?: string;
+  org: string;
+  orgLink?: string;
   date: string;
-  subtitle: string[];
+  position: string[];
   skills?: string[][];
-  description?: string[][];
+  description?: (string | React.ReactNode)[][];
   icon?: string;
+  link?: { [key: string]: string };
 }
 
 export interface Tag {

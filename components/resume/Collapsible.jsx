@@ -7,15 +7,23 @@ export default function Collapsible({ title, children, defaultOpen = false }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="mb-3">
+    <div className="mb-3 ">
       <div className="">
         <button
-          className="transition-all disabled:pointer-events-none cursor-pointer w-full flex items-center justify-between"
+          className="transition-all disabled:pointer-events-none cursor-pointer w-full flex 
+          items-center justify-between
+          
+          "
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           title={`${isOpen ? "Click to close" : "Click to expand"}`}
         >
-          <div className=" flex items-center w-full justify-between  text-indigo-400 dark:text-indigo-300 mb-8">
+          <div
+            className=" flex items-center w-full justify-between 
+            text-indigo-400 dark:text-indigo-300 
+            border-b-2 border-indigo-100 mb-8
+          "
+          >
             <Section title={title} />
             {/* the triangle icon*/}
             <div

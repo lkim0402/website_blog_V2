@@ -2,16 +2,17 @@ import { sectionDetails } from "@/data/types";
 import Image from "next/image";
 
 export default function SectionDetails({
-  title,
-  titleLink,
+  org: title,
+  orgLink,
   date,
-  subtitle,
+  position,
   skills = [],
   description = [],
   icon,
+  link,
 }: sectionDetails) {
   // Normalize subtitle to an array if it's a string
-  const subtitleArray = Array.isArray(subtitle) ? subtitle : [subtitle];
+  const subtitleArray = Array.isArray(position) ? position : [position];
 
   return (
     <div className="flex items-start gap-4 mb-2">
@@ -56,9 +57,9 @@ export default function SectionDetails({
                   {/* Company and Date (only show on first role) */}
                   {index === 0 && (
                     <div className="text-gray-600 dark:text-gray-300 mb-1">
-                      {titleLink ? (
+                      {orgLink ? (
                         <a
-                          href={titleLink}
+                          href={orgLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:underline"
@@ -75,7 +76,7 @@ export default function SectionDetails({
               </div>
               {/* Skills */}
               {skills[index] && skills[index].length > 0 && (
-                <p className="italic text-gray-400 dark:text-gray-300">
+                <p className="italic text-gray-600 dark:text-gray-300">
                   {skills[index].join(", ")}
                 </p>
               )}
@@ -83,11 +84,31 @@ export default function SectionDetails({
 
             {/* Description */}
             {description[index] && description[index].length > 0 && (
-              <ul className="list-none  space-y-1">
+              <ul className="list-disc list-outside ml-5 space-y-1">
                 {description[index].map((desc, descIdx) => (
                   <li key={descIdx}>{desc}</li>
                 ))}
               </ul>
+            )}
+
+            {/* Links */}
+            {link && (
+              <div className="flex flex-row space-x-2">
+                {Object.entries(link).map(([key, value]) => (
+                  <div
+                    key={key}
+                    className="py-0.5 px-1.5  my-4 border rounded
+                    border-indigo-400 text-indigo-400
+                    hover:text-white hover:bg-indigo-400 hover:border-indigo-400
+                    dark:border-indigo-200 dark:text-indigo-200 
+                     "
+                  >
+                    <a href={value} target="_blank" rel="noopener noreferrer">
+                      {key}
+                    </a>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         ))}
