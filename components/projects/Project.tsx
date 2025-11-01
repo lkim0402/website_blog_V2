@@ -19,13 +19,13 @@ export default function Project({
       align-center w-full 
       "
     >
-      <div className="relative shadow-xl ">
+      <div className="">
         <Image
           src={src}
           alt={title}
           width={500}
           height={500}
-          className="object-cover h-[20rem]"
+          className="object-cover h-[20rem] shadow-xl"
         />
       </div>
 

@@ -73,7 +73,7 @@ export const projectData: ProjectStruct[] = [
 
   // bingenius
   {
-    src: "/project/binGenius.png",
+    src: "/project/bingenius.png",
     title: "BinGenius",
     date: "Jan 2024",
     type: [ProjectType.AI],
