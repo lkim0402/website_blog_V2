@@ -12,21 +12,21 @@ export function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
+  // useEffect(() => {
+  //   const theme = localStorage.getItem("theme");
 
-    // if theme is null, then make the default to light
-    if (theme === null) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setCurTheme("dark");
-    }
-    // If a theme is set in localStorage, use that
-    else if (theme === "light") {
-      document.documentElement.classList.remove("dark");
-      setCurTheme("light");
-    }
-  }, []);
+  //   // if theme is null, then make the default to light
+  //   if (theme === null) {
+  //     document.documentElement.classList.add("dark");
+  //     localStorage.setItem("theme", "dark");
+  //     setCurTheme("dark");
+  //   }
+  //   // If a theme is set in localStorage, use that
+  //   else if (theme === "light") {
+  //     document.documentElement.classList.remove("dark");
+  //     setCurTheme("light");
+  //   }
+  // }, []);
 
   const toggleTheme = () => {
     if (typeof window !== "undefined" && document) {
