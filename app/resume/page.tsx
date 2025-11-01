@@ -1,8 +1,5 @@
 "use client";
-// import * as motion from "motion/react-client";
 
-// import Section from "../../components/resume/Section.jsx";
-// import Link from "next/link";
 import SectionDetails from "../../components/resume/SectionDetails";
 import Collapsible from "../../components/resume/Collapsible";
 import FadeInPage from "../../components/FadeInPage";
@@ -37,13 +34,6 @@ export default function Resume() {
 
         {/* Certs - using Collapsible */}
         <Collapsible title="Certifications" defaultOpen>
-          {/* <div className="font-bold text-lg">Professional Certifications</div> */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-            {certDetails.map((el) => {
-              return <Certification key={el.title} {...el} />;
-            })}
-          </div> */}
-
           <div className="mb-6">
             <div className="mb-4">
               {/* Role title */}

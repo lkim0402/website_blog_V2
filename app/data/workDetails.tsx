@@ -10,23 +10,10 @@ export const WorkDetails: sectionDetails[] = [
     description: [
       [
         <>
-          Developed <span className="font-bold">SonoCraftAR</span>, an AR
-          HoloLens system that enables DHH (deaf and hard of hearing) users to{" "}
-          <span className="font-bold">
-            author personalized shape-based visualizations
-          </span>
-          .
-        </>,
-        <>
-          Implemented
-          <span className="font-bold">
-            {" "}
-            real-time audio processing and script generation/compilation
-          </span>{" "}
-          in Unity/C#, GPT API (4o), and Rosyln compiler.
-        </>,
-        <>
-          Designed a <span className="font-bold">multi-agent AI pipeline</span>,
+          Developed SonoCraftAR, an AR HoloLens system that enables DHH users to
+          author personalized shape-based visualizations. Implemented real-time
+          audio processing and script generation/compilation in Unity/C#, GPT
+          API (4o), and Rosyln compiler; Designed a multi-agent AI pipeline,
           delegating specific tasks (e.g., audio transcription, shape
           generation) to specialized prompts with the GPT API, improving
           modularity.
@@ -57,7 +44,7 @@ export const WorkDetails: sectionDetails[] = [
     org: "ArtygenSpace",
     orgLink: "https://www.artygenspace.com/artygenspace-eng-version",
     date: "Aug 2024 - Dec 2024",
-    position: ["Software Engineer Intern"],
+    position: ["AI/Software Engineer Intern"],
     skills: [
       [
         "Python",
@@ -74,25 +61,17 @@ export const WorkDetails: sectionDetails[] = [
     description: [
       [
         <>
-          Automated{" "}
-          <span className="font-bold">real-time sound effect retrieval</span> on{" "}
-          <span className="font-bold">1,000+ sound samples</span>
-          with a <span className="font-bold">
-            GenAI-powered RAG pipeline
-          </span>{" "}
-          (Python/LangChain), replacing manual workflows. Benchmarked LLMs and
-          embeddings to optimize accuracy, latency, and cost, incorporating
-          prompt engineering and endpoint testing with Flask.
+          Automated real-time sound effect retrieval on 1,000+ sound samples
+          with a GenAI-powered RAG pipeline (Python/LangChain), replacing manual
+          workflows. Benchmarked LLMs and embeddings to optimize accuracy,
+          latency, and cost, incorporating prompt engineering.
         </>,
         <>
-          Developed and demonstrated multiple{" "}
-          <span className="font-bold">experimental AR/XR prototypes</span> in
-          Unity/C# for platforms including mobile AR and the Apple Vision Pro,
-          integrating features like{" "}
-          <span className="font-bold">real-time LiDAR data</span> and
-          multiplayer functionality. Showcased projects at exhibitions,
-          receiving positive feedback from{" "}
-          <span className="font-bold">100+ industry attendees</span>.
+          Developed and demonstrated multiple experimental AR/XR prototypes in
+          Unity/C# for platforms including mobile AR & Apple Vision Pro,
+          integrating features (real-time LiDAR data, multiplayer functionality,
+          etc). Showcased projects at exhibitions, receiving positive feedback
+          from 100+ industry attendees.
         </>,
       ],
     ],
@@ -107,18 +86,10 @@ export const WorkDetails: sectionDetails[] = [
       [
         <>
           Designed and implemented an integrated school database platform (
-          <span className="font-bold">~30TB</span>) using{" "}
-          <span className="font-bold">Google Workspace</span>, enabling
-          efficient access to grades, quick links, event pages, and staff
-          schedules.
-        </>,
-        <>
-          Conducted a{" "}
-          <span className="font-bold">one-week training program</span> for{" "}
-          <span className="font-bold">15+ staff members</span> on Google
-          Workspace and related tools, including leading training sessions,
-          preparing materials, and providing hands-on exercises to improve
-          staff’s technical proficiency.
+          ~30TB) using Google Workspace, enabling efficient access to grades,
+          quick links, event pages, and staff schedules. Conducted a one-week
+          training program for 15+ staff members on Google Workspace, IT tools,
+          and edutech.
         </>,
       ],
     ],
@@ -137,8 +108,7 @@ export const WorkDetails: sectionDetails[] = [
     description: [
       [
         <>
-          Provided <span className="font-bold">1:1 technical support</span> to{" "}
-          <span className="font-bold">15+ students per week</span>, handling
+          Provided 1:1 technical support to 15+ students per week, handling
           software installation, account troubleshooting, and device
           connectivity issues.
         </>,

@@ -4,11 +4,16 @@ import "./globals.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const inter = Inter({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
 });
+// const inter = Inter({
+//   subsets: ["latin"],
+// });
 
 // import "highlight.js/styles/github.css";
 
@@ -26,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={dm_sans.className}>
       <Head>
         <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -41,9 +46,11 @@ export default function RootLayout({
       />
       <GoogleAnalytics gaId="G-VEJVKJLKK7" />
 
-      <body className="mt-7 md:mt-25">
-        <Header />
-        <div className="px-6 text-lg md:pl-70 lg:pl-82 xl:pl-90 md:w-11/12">
+      <body>
+        <div className=" pt-0.5 pb-0.5 bg-blue-100 mb-10">
+          <Header />
+        </div>
+        <div className="mt-5 md:w-7/12 flex flex-col mx-auto text-md">
           {children}
         </div>
         <Footer />

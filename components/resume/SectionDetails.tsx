@@ -38,19 +38,19 @@ export default function SectionDetails({
               {/* title + desc */}
               <div className="flex ">
                 {icon && (
-                  <div className="min-w-[48px] h-[48px] mt-1 md:hidden block mr-4">
+                  <div className="min-w-[48px] h-[48px] mt-1 md:hidden block mr-4 ">
                     <Image
                       src={icon}
                       alt="logo"
                       width={68}
                       height={68}
-                      className="rounded-md"
+                      className="rounded-md "
                     />
                   </div>
                 )}
                 {/* Role title */}
                 <div>
-                  <p className="font-medium text-[1.45rem] dark:text-indigo-200">
+                  <p className="font-medium text-[1.20rem] dark:text-indigo-200">
                     {role}
                   </p>
 

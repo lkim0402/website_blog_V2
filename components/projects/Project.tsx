@@ -1,60 +1,35 @@
-import { ProjectType } from "@/data/projectData";
+import { ProjectStruct } from "@/data/projectData";
 import Image from "next/image";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./carousel";
 import Link from "next/link";
 
 export default function Project({
+  src,
   title,
   date,
   type,
-  imgList,
   links,
   skills,
   explanation,
-}: ProjectType) {
+}: ProjectStruct) {
   return (
     <div
       className="flex flex-col 
-    h-auto 
-    min-w-[290px]
-     mx-4
-    
-    align-center 
-
-    w-full 
-    "
+      h-auto min-w-[290px] mx-4
+      align-center w-full 
+      "
     >
       <div className="relative">
-        <Carousel className="w-full max-w-full border-2 border-gray-200 dark:border-none rounded-lg overflow-hidden">
-          <CarouselContent className="mx-1.6">
-            {imgList.map((img, index) => (
-              <CarouselItem key={index} noPadding>
-                <div key={index} className="aspect-[13/9] relative w-full ">
-                  <Image
-                    src={img}
-                    alt={`${title} - image ${index + 1}`}
-                    fill
-                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority={index === 0}
-                    className="object-cover"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <Image
+          src={src}
+          alt={title}
+          width={500}
+          height={500}
+          className="object-cover h-[20rem]"
+        />
       </div>
 
-      {/* Project details below the carousel */}
+      {/* Project details below the image/gif */}
       <div className="space-y-2 px-2 mt-3">
         <h2 className="text-2xl font-bold text-indigo-400 dark:text-indigo-200">
           {title}

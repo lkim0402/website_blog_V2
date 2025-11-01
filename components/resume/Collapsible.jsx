@@ -20,7 +20,6 @@ export default function Collapsible({ title, children, defaultOpen = false }) {
         >
           <div
             className=" flex items-center w-full justify-between 
-            text-indigo-400 dark:text-indigo-300 
             border-b-2 border-indigo-100 mb-8
           "
           >

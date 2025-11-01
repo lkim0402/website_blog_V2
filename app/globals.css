@@ -3,20 +3,44 @@
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 @import "highlight.js/styles/base16/mocha.min.css";
-/* @import "highlight.js/styles/base16/ia-dark.css"; */
-/* @import "highlight.js/styles/base16/nova.css"; */
 
-/* 
----break--- */
+
+
 @custom-variant dark (&:where(.dark, .dark *));
 
-body {
-  font-family: "Inter", sans-serif;
+@font-face {
+  font-family: "PixelFont";
+  src: url("/fonts/Minecraftia-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MicrosoftFont";
+  src: url("/fonts/MSW98UI-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* body {
+  font-family: "MicrosoftFont";
+} */
+
+.pixelFont {
+  font-family: "PixelFont";
+}
+
+.microsoftFont {
+  font-family: "MicrosoftFont";
 }
 
 .prose {
   width: max-content;
 }
+
+.picture-frame {
+  border: 2px solid rgb(148, 156, 158);
+}
+
 pre {
   background: #1e1e1e;
   color: #f8f8f2;

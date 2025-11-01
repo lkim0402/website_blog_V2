@@ -6,25 +6,53 @@ import FadeInPage from "../components/FadeInPage";
 export default function Home() {
   return (
     <FadeInPage>
-      <div className="text-lg ">
+      <div className="mt-4">
         {/* section 1 - cover */}
         <section className="flex flex-col sm:flex-row gap-6">
-          <div className="w-30 aspect-[3/4] relative">
-            <Image
-              src="/test.png"
-              alt="test"
-              fill
-              className="object-cover rounded-md"
-            />
+          {/* picture */}
+          <div className="w-[36rem] aspect-[3/4] relative picture-frame">
+            <div className="absolute inset-0 flex flex-col pointer-events-none">
+              {/* title bar */}
+              <div className="h-7 bg-blue-100 border border-gray-500 shadow-sm px-2 text-xs">
+                <div className="flex mt-1 items-center justify-end space-x-0.5">
+                  <div className="w-4 h-4 bg-gray-100 border border-gray-500 flex items-center justify-center text-gray-800">
+                    _
+                  </div>
+                  <div className="w-4 h-4 bg-gray-100 border border-gray-500 flex items-center justify-center text-gray-800">
+                    ◻
+                  </div>
+                  <div className="w-4 h-4 bg-gray-100 border border-gray-500 flex items-center justify-center text-gray-800">
+                    X
+                  </div>
+                </div>
+              </div>
+
+              <div className="h-6 bg-gray-100 border-l border-r  border-b border-gray-500 shadow-sm flex items-center px-1 text-xs microsoftFont">
+                <span className="px-1 text-gray-800">File</span>
+                <span className="px-1 text-gray-800">Edit</span>
+                <span className="px-1 text-gray-800">View</span>
+              </div>
+
+              <div className="flex-grow bg-gray-300 p-1 border-t border-l  border-b border-r border-gray-500 shadow-inner relative">
+                <Image
+                  src="/cand1.jpg"
+                  alt="test"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="h-3 bg-gray-100 border-l border-r  border-b border-gray-500 shadow-sm flex items-center px-1 text-xs microsoftFont"></div>
+            </div>
           </div>
-          {/* // the intro top part */}
-          <div className="mt-4 text-left">
-            <p className="font-bold text-[2rem]">Leejun Kim</p>
-            <div className="text-gray-600 dark:text-indigo-200">
-              <p>
-                🌀🐚 CS major @ UW Seattle, focus on backend engineering +
-                cloud, interest in AI
-              </p>
+
+          {/* intro */}
+          <div className=" text-left">
+            <p className="font-bold text-[2rem] microsoftFont">
+              Hi, I'm Leejun Kim!
+            </p>
+            <div className="text-gray-600 dark:text-indigo-200 mb-3 ">
+              <p>🌀🐚 software engineer (backend, cloud, ai)</p>
               <div className="flex gap-2 underline dark:text-indigo-300">
                 <Link
                   href="https://github.com/lkim0402"
@@ -42,112 +70,41 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            <div className="flex-col space-y-2">
+              <p>Welcome to my small corner of the web!</p>
+              <p>
+                I'm Leejun, and I'm a researcher / programmer. I'm currently
+                studying CS @ Paul G. Allen School.
+              </p>
+              <p>
+                Currently, I'm exploring different things! I’m learning Java
+                SpringBoot, aiming for AWS Certified Solutions Architect (cloud
+                engineering seems cool), polishing my full stack skills, and
+                researching AR tech and LLMs at Makeability Lab @ UW.
+              </p>
+              <p>
+                Outside of tech, I love reading (hopefully I can finish my
+                to-read list), art, games, and organizing my messy notes.
+              </p>
+              <p>Feel free to reach out anywhere!</p>
+            </div>
           </div>
         </section>
 
-        {/* Welcome section*/}
-        <div className="flex flex-wrap 3xl:flex-nowrap ">
-          <section>
-            <section className="flex-auto min-w-[18rem] w-fit xl:w-3xl pr-10">
-              <div className="">
-                <p className=" font-bold mb-3 mt-3 text-[1.8rem] text-indigo-400 dark:text-indigo-200 ">
-                  Hi there!
-                </p>
-                <div className="flex-col space-y-5">
-                  <div>
-                    <p>
-                      I’m an undergrad @ UW Seattle majoring CS. I’m more of a
-                      generalist, having interest ranging from VR/AR to backend
-                      engineering. I also love art and creative media.
-                    </p>
-                  </div>
-                  <p>
-                    Currently, I’m learning Java SpringBoot, aiming for AWS
-                    Certified Solutions Architect, and researching AR tech at
-                    Makeability Lab @ UW.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Things I've tried/am interested in:*/}
-            <section>
-              <div className="mt-6 mb-5">
-                <p className=" font-bold mb-1 text-[1.25rem]  ">
-                  Things I’ve tried/am interested in:
-                </p>
-                <ul className="list-disc pl-6">
-                  <li>Cloud engineering - AWS CCP, SAA (TODO)</li>
-                  <li>
-                    Full stack engineering - various ongoing/finished personal
-                    projects (+ this website)
-                  </li>
-                  <li>
-                    VR/Game dev - had an internship, research, game jam w/ Unity
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </section>
-
-          {/* the part i want to fix */}
-          <section className="flex flex-wrap gap-5 mb-5 flex-1 ">
-            {/* Some Facts */}
-            <section className="flex-1 min-w-[20rem]">
-              <div
-                className="rounded-md  font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black"
-                style={{
-                  background: "linear-gradient(to right, #fcd3ec, #d4e6ff)",
-                }}
-              >
-                RANDOM FACTS
-              </div>
-              <ul className="list-disc pl-6">
-                <li>I’m from South Korea, but I grew up in the Philippines!</li>
-                <li>
-                  Used to play the piano for the local church for 5+ years
-                </li>
-              </ul>
-            </section>
-
-            {/* likes */}
-            <section className="flex-1 min-w-[20rem]">
-              <div
-                className="rounded-md font-bold w-full text-[1.45rem] py-1 px-2 mb-4 bg-[#E5E4FF] dark:bg-[#cbc9f9] dark:text-black"
-                style={{
-                  background: "linear-gradient(to right, #fcd3ec, #d4e6ff)",
-                }}
-              >
-                LIKES
-              </div>
-              <ul className="list-disc pl-6">
-                <li>
-                  Drawing (CSP/Procreate), music, writing, world building -
-                  basically creating things
-                </li>
-                <li>
-                  Reading (programming, scifi, finance, essays, self-help)
-                </li>
-                <li>Organizing notes - obsidian</li>
-                <li>Gaming!</li>
-              </ul>
-            </section>
-          </section>
-
-          {/* About this website*/}
-        </div>
-
         {/* About section*/}
-        <section className="rounded-md  py-7 px-6 mt-4 text-black bg-[#E5E4FF] dark:bg-[#cbc9f9]">
+
+        <section className="border-2 border-gray-300 shadow-sm py-7 px-6 mt-10 text-black bg-blue-100 dark:bg-[#cbc9f9]">
           <section className="text-left">
-            <p className=" font-bold text-[1.2rem] mb-1 ">About this website</p>
+            <p className=" font-bold text-[1.2rem] mb-1 microsoftFont">
+              About this website
+            </p>
           </section>
           <ul className="flex flex-col list-disc pl-6">
             <li>
-              I’ve always wanted to start a website/blog on my own, because I
-              think it’s one of the best ways to show/express yourself in this
-              wide world. It’s only in March 2025 that I’ve finally started to
-              build & work on it 🌱.
+              My website was created around March 2025 as a personal (online)
+              journal, as well as keeping documentation or technical details for
+              various tools & tech. Everything just reflects my personal
+              opinions.
             </li>
             <li>
               I&apos;m primarily inspired by{" "}
@@ -177,29 +134,11 @@ export default function Home() {
               🛠️ Tech stack: React, Tailwind CSS, Next.js, MongoDB driver/Atlas,
               Vercel/Render
             </li>
-            {/* <p>
-              Each category represents different aspects:
-              <ul>
-                <li>Projects</li>
-                <li>Worshop</li>
-                <li>Journal</li>
-                <li>Books</li>
-                <li>Mind</li>
-              </ul>
-            </p>
-            <p>
-              The difference between this website and my digital garden (the
-              Mind section) is that{" "}
-            </p> */}
           </ul>
         </section>
 
         {/* Recent posts */}
         {/* Recent projects */}
-
-        {/* ending */}
-
-        {/* </motion.section> */}
       </div>
     </FadeInPage>
   );
