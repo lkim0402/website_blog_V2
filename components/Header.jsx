@@ -5,7 +5,7 @@ import { X, Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
-const headerElem = ["home", "resume", "projects", "workshop", "mind💭"];
+const headerElem = ["home", "resume", "projects", "blog", "mind💭"];
 
 export function Header() {
   const [curTheme, setCurTheme] = useState("light");

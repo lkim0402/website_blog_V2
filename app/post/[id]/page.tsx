@@ -103,7 +103,7 @@ export default function PostDetail() {
             {/* Back button above title */}
             <div className="mb-4 sticky top-10 hidden md:block">
               <Link
-                href={`/workshop`}
+                href={`/blog`}
                 className="inline-flex items-center justify-center w-10 h-10 rounded-md
                 bg-white  transition-colors 
                 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -112,10 +112,10 @@ export default function PostDetail() {
               </Link>
             </div>
 
-            <div className="mb-8 space-y-6">
-              <h1 className="text-4xl font-bold break-words">{post.title}</h1>
+            <div className="mb-5 space-y-4">
+              <h1 className="text-4xl font-bold break-words ">{post.title}</h1>
 
-              <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400 dark:text-gray-200">
+              <div className="flex flex-wrap items-center microsoftFont gap-4 text-sm text-gray-400 dark:text-gray-200">
                 {/* Post metadata items */}
                 <span className="flex items-center shrink-0">
                   <svg

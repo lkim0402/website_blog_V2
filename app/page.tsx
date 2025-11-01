@@ -48,26 +48,27 @@ export default function Home() {
 
           {/* intro */}
           <div className=" text-left">
-            <p className="font-bold text-[2rem] microsoftFont">
-              Hi, I'm Leejun Kim!
-            </p>
-            <div className="text-gray-600 dark:text-indigo-200 mb-3 ">
-              <p>🌀🐚 software engineer (backend, cloud, ai)</p>
-              <div className="flex gap-2 underline dark:text-indigo-300">
-                <Link
-                  href="https://github.com/lkim0402"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/leejunkim/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  linkedln
-                </Link>
+            {/* 1st part of the intro */}
+            <div className="microsoftFont">
+              <p className="font-bold text-[2rem]">Hi, I'm Leejun Kim!</p>
+              <div className="text-gray-600 dark:text-indigo-200 mb-3 ">
+                <p>🌀🐚 software engineer (backend, cloud, ai)</p>
+                <div className="flex gap-2 underline dark:text-indigo-300">
+                  <Link
+                    href="https://github.com/lkim0402"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/leejunkim/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedln
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="flex-col space-y-2">
