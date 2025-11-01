@@ -50,7 +50,7 @@ export default function Home() {
           <div className=" text-left">
             {/* 1st part of the intro */}
             <div className="microsoftFont">
-              <p className="font-bold text-[2rem]">Hi, I'm Leejun Kim!</p>
+              <p className="font-bold text-[2rem]">Hi, I&apos;m Leejun Kim!</p>
               <div className="text-gray-600 dark:text-indigo-200 mb-3 ">
                 <p>🌀🐚 software engineer (backend, cloud, ai)</p>
                 <div className="flex gap-2 underline dark:text-indigo-300">
@@ -74,14 +74,14 @@ export default function Home() {
             <div className="flex-col space-y-2">
               <p>Welcome to my small corner of the web!</p>
               <p>
-                I'm Leejun, and I'm a researcher / programmer. I'm currently
-                studying CS @ Paul G. Allen School.
+                I&apos;m Leejun, and I&apos;m a researcher / programmer.
+                I&apos;m currently studying CS @ Paul G. Allen School.
               </p>
               <p>
-                Currently, I'm exploring different things! I’m learning Java
-                SpringBoot, aiming for AWS Certified Solutions Architect (cloud
-                engineering seems cool), polishing my full stack skills, and
-                researching AR tech and LLMs at Makeability Lab @ UW.
+                Currently, I&apos;m exploring different things! I’m learning
+                Java SpringBoot, aiming for AWS Certified Solutions Architect
+                (cloud engineering seems cool), polishing my full stack skills,
+                and researching AR tech and LLMs at Makeability Lab @ UW.
               </p>
               <p>
                 Outside of tech, I love reading (hopefully I can finish my

@@ -15,8 +15,9 @@ export default function Projects() {
 
   const [category, setCategory] = useState(ProjectType.All);
 
-  function handleClick(data) {
-    const category = data.target.value;
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+    const valueFromButton = event.currentTarget.value;
+    const category = valueFromButton as ProjectType;
     setCategory(category);
     console.log("Data received from child:", category);
   }
