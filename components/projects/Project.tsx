@@ -19,7 +19,7 @@ export default function Project({
       align-center w-full 
       "
     >
-      <div className="relative">
+      <div className="relative shadow-xl ">
         <Image
           src={src}
           alt={title}
@@ -30,14 +30,19 @@ export default function Project({
       </div>
 
       {/* Project details below the image/gif */}
-      <div className="space-y-2 px-2 mt-3">
-        <h2 className="text-2xl font-bold text-indigo-400 dark:text-indigo-200">
+      <div className="space-y-2 px-2 mt-5">
+        <h2 className="text-2xl font-bold text-indigo-400 dark:text-indigo-200 microsoftFont">
           {title}
         </h2>
-        <div className="flex flex-wrap gap-2 text-gray-800 dark:text-gray-300">
+        <div className="flex flex-wrap gap-2 text-gray-800 dark:text-gray-300 microsoftFont">
           <span className=" dark:text-white dark:opacity-70">{date}</span>
           <span className="">|</span>
-          <span className=" dark:text-white dark:opacity-70">{type}</span>
+          <span
+            className=" dark:text-white dark:opacity-70 
+           text-center  "
+          >
+            #{type}
+          </span>
           <span className="">|</span>
           {links &&
             links.map((el, index) => {
@@ -45,22 +50,23 @@ export default function Project({
                 <Link
                   key={index}
                   href={el.url}
-                  className="text-gray-800 dark:text-gray-300 hover:text-indigo-400 dark:hover:text-indigo-200 hover:scale-105"
+                  className="dark:text-gray-300
+                  text-indigo-500
+                   hover:text-indigo-700 dark:hover:text-indigo-200 
+                   hover:scale-105"
                 >
                   [{el.name}]
                 </Link>
               );
             })}
         </div>
-        <span className="  italic text-gray-400 dark:text-gray-300">
+        <span className="microsoftFont text-gray-400 dark:text-gray-300">
           {skills}
         </span>
         <div className="py-2">
-          <div className="">
-            {explanation.map((el, index) => {
-              return <p key={index}>{el}</p>;
-            })}
-          </div>
+          {explanation.map((el, index) => {
+            return <p key={index}>{el}</p>;
+          })}
         </div>
       </div>
     </div>
